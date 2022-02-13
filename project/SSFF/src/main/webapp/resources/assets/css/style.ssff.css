@@ -1,0 +1,440 @@
+/*--------글꼴-------*/
+
+/*
+나눔스퀘어라운드
+https://hangeul.naver.com/2021/fonts/nanum
+*/
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+코트라 고딕
+https://www.kotra.or.kr/kh/about/KHKIPI071M.html
+*/
+@font-face {
+    font-family: 'KOTRA_GOTHIC';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+이사만루체
+https://www.gonggames.com
+*/
+@font-face {
+    font-family: 'Esamanru';
+    src: url('/resources/assets/fonts/esamanruMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EsamanruLight';
+    src: url('/resources/assets/fonts/esamanruLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EsamanruBold';
+    src: url('/resources/assets/fonts/esamanruBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*
+넥슨Lv2 고딕체
+http://levelup.nexon.com/font/index.aspx
+*/
+@font-face {
+    font-family: 'NEXON Lv2 Gothic OTF';
+    src: url('/resources/assets/fonts/NEXONLv2Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv2 Gothic OTF Light';
+    src: url('/resources/assets/fonts/NEXONLv2GothicLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NEXON Lv2 Gothic OTF Bold';
+    src: url('/resources/assets/fonts/NEXONLv2GothicBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+/*
+Pretendard
+https://cactus.tistory.com/306
+*/
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    font-display: swap;
+    src: url('/resources/assets/fonts/Pretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-display: swap;
+    src: url('/resources/assets/fonts/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-display: swap;
+    src: url('/resources/assets/fonts/Pretendard-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-display: swap;
+    src: url('/resources/assets/fonts/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-display: swap;
+    src: url('/resources/assets/fonts/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-display: swap;
+    src: url('/resources/assets/fonts/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 200;
+    font-display: swap;
+    src: url('/resources/assets/fonts/Pretendard-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 100;
+    font-display: swap;
+    src: url('/resources/assets/fonts/Pretendard-Thin.woff') format('woff');
+}
+
+/*----줄바꿈 환경----*/
+body{
+    word-break: keep-all;
+}
+
+/*-----마우스 오버시 테두리-----*/
+.hover-border_ssff1:hover{
+    border: 1px solid #6b984f;
+}
+
+.hover-border_ssff2:hover{
+    border: 1px solid #ebab31;
+}
+
+.hover-shadow_ssff1:hover{
+    box-shadow: 0px 0px 1px #6b984f;
+}
+
+.hover-border_ssff2:hover{
+    box-shadow: 0px 0px 1px #ebab31;
+}
+
+/*-----포인트 색상 배경-----*/
+.bg-ssff1{
+    background-color: #6b984f !important;
+    color: white !important;
+}
+
+.bg-ssff2{
+    background-color: #ebab31 !important;
+    color: white !important;
+}
+
+.bg-hover-ssff1:hover{
+    -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+    background-color: #6b984f !important;
+}
+
+.bg-hover-ssff2:hover{
+    -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+    background-color: #ebab31 !important;
+}
+
+/*-----포인트 색상 텍스트-----*/
+.text-ssff1{
+    color: #6b984f !important;
+}
+
+.text-ssff2{
+    color: #ebab31 !important;
+}
+.text-dark-25 {
+    color: #D1D3E0 !important;
+}
+a.text-hover-ssff-green:hover,
+.text-hover-ssff-green:hover {
+    -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+    color: #6b984f !important;
+}
+
+a.text-hover-ssff-orange:hover,
+.text-hover-ssff-orange:hover {
+    -webkit-transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;
+    color: #ebab31 !important;
+}
+
+/*----디자인 설정용 단축태그----*/
+.cursor-pointer{
+    cursor: pointer !important;
+}
+
+.d-grid{
+    display: grid !important;
+}
+
+.object-contain{
+    object-fit: contain !important;
+    -o-object-fit: contain !important;
+}
+
+.object-cover{
+    object-fit: cover !important;
+    object-position: 50% 50% !important;
+    -o-object-fit: cover !important;
+    -o-object-position: 50% 50% !important;
+}
+
+.align-self-center{
+    align-self: center !important;
+    -webkit-align-self: center !important;
+}
+
+.list-style-none{
+    list-style: none !important;
+}
+
+.filter-shadow{
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.05);
+    box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.05);
+}
+
+.px-p15{
+    padding:0 15% !important;
+}
+
+.l-sp-015{
+    letter-spacing: 0.15em !important;
+}
+
+/*----메인 화면----*/
+.main_page{
+    background-color: #FFFFFF;
+    background-image: url("/resources/assets/images/bg/bg-0.png") !important;
+    background-position:left top;
+    background-size: contain;
+    background-repeat: repeat-y !important;
+}
+
+#main_LOGO img{
+    width: 100%;
+    max-width: 700px !important;
+    min-width: 200px !important;
+    animation: shake 12s infinite;
+}
+
+#main_LOGO{
+    padding-left: 6rem;
+}
+
+@media (min-width: 576px) {
+    #main_LOGO {
+        padding-left: 8rem;
+    }
+}
+
+@media (min-width: 768px) {
+        #main_LOGO {
+            padding-left: 10rem;
+        }
+    }
+
+@media (min-width: 992px) {
+    #main_LOGO {
+        padding-left: 13rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    #main_LOGO {
+        padding-left: 15rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    #main_LOGO {
+        padding-left: 17rem;
+    }
+}
+
+.main_menu{
+    padding-right: 8rem;
+}
+
+.main_menu img{
+    width: 100%;
+    max-width: 500px !important;
+    min-width: 200px !important;
+}
+
+.main_menu img:hover {
+    animation: shake 2s infinite;
+}
+
+/*----로그인 화면----*/
+#kt_login_signin_submit{
+    width: 180px !important;
+}
+
+/*----헤더----*/
+
+.progress-bar-horizonal {
+    height: 5px;
+    background-color: #548a25;
+    transition: all 0.1s linear;
+    z-index: 1000;
+    display: block;
+    position: fixed;
+    top: 0px;
+    opacity: 0.3;
+}
+
+.header-fixed[data-header-scroll="on"] .progress-bar-horizonal {
+    -webkit-animation: progress-scroll-animation .5s ease 1;
+    animation: progress-scroll-animation .5s ease 1;
+    opacity: 0.6;
+}
+
+.header-fixed[data-header-scroll="on"] .header {
+    -webkit-animation: header-scroll-animation2 .5s ease 1;
+    animation: header-scroll-animation2 .5s ease 1;
+    background: rgba(255,255,255,0.8) !important;
+}
+
+@keyframes header-scroll-animation2 {
+    from {
+        background: transparent;
+    }
+    to {
+        background: rgba(255,255,255,0.8);
+    }
+}
+
+@keyframes progress-scroll-animation {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 0.6;
+    }
+}
+
+
+/*----마이페이지 언어로고----*/
+.member_lang img{
+    filter: grayscale(100%);
+    max-width: 2rem;
+}
+
+
+/*-----로딩중 페이지 효과-----*/
+#loading {
+!important;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    background: #FFFFFF;
+    opacity: 0.7;
+    z-index: 100;
+    text-align: center;
+}
+
+#loading img {
+!important;
+    background: #FFFFFF;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: auto;
+    top: 41%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    animation: shake 2s infinite;
+
+}
+@keyframes shake{
+    0%{	transform: translate(1px, 1px) rotate(0deg);}
+    10%{	transform: translate(-1px, -1px) rotate(-1deg);}
+    20%{	transform: translate(3px, 1px) rotate(1deg);}
+    30%{	transform: translate(3px, 2px) rotate(0deg);}
+    40%{	transform: translate(1px, -1px) rotate(1deg);}
+    50%{	transform: translate(-1px, 1px) rotate(-1deg);}
+    60%{	transform: translate(2px, -1px) rotate(0deg);}
+    70%{	transform: translate(-1px, 1px) rotate(1deg);}
+    80%{	transform: translate(3px, -1px) rotate(-1deg);}
+    90%{	transform: translate(1px, 3px) rotate(0deg);}
+    100%{	transform: translate(1px, -2px) rotate(1deg);}
+}
+
+:root {
+    --ssff-orange: #ebab31;
+    --ssff-green: #6b984f;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #ffffff;
+    --gray: #7E8299;
+    --gray-dark: #3F4254;
+    --primary: #6b984f;
+    --secondary: #E4E6EF;
+    --success: #1BC5BD;
+    --info: #6993FF;
+    --warning: #FFA800;
+    --danger: #F64E60;
+    --light: #F3F6F9;
+    --dark: #181C32;
+}

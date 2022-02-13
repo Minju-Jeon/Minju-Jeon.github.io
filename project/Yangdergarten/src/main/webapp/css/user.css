@@ -1,0 +1,300 @@
+.addSt-page {
+	width: 360px;
+	padding: 4rem 0 10%;
+	margin: 0 auto;
+}
+
+.login-page {
+	width: 360px;
+	padding: 4rem 0 10%;
+	margin: auto;
+}
+
+.register-page {
+	width: 360px;
+	padding: 2% 0 10%;
+	margin: auto;
+}
+
+.user-page h3 {
+	font-family: "jua", sans-serif;
+	text-align: center;
+	color: pink;
+	margin: 10px 0 30px;
+	font-size: 40px;
+}
+
+.user-page .btn_area {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.user-page input, .user-page select {
+	outline: 0;
+	width: 100%;
+	margin: 0 0 15px;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+	border-bottom: 3px solid pink;
+	border-radius: .25rem;
+	background-color: rgba(255, 255, 255, 0.5);
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.user-page input:focus, .user-page select:focus {
+	border: 1px solid pink;
+	border-bottom: 3px solid pink;
+}
+
+.user-page input::placeholder {
+	color: gray;
+}
+
+.user-page input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+@media screen and (prefers-reduced-motion:reduce) {
+	.form-control {
+		transition: none
+	}
+}
+
+.form-control::-ms-expand {
+	background-color: transparent;
+	border: 0
+}
+
+
+.form-control:disabled, .form-control[readonly] {
+	background-color: #e9ecef;
+	opacity: 1
+}
+
+select.form-control:focus::-ms-value {
+	color: #495057;
+}
+
+/* -----------폼 시작----------- */
+.user-page form {
+	position: relative;
+	z-index: 1;
+	background: rgba(255, 255, 255, 0.4);
+	max-width: 360px;
+	margin: 0 auto;
+	padding: 10px 50px 50px 50px;
+	text-align: center;
+	border-radius: 40px;
+	border: 2px dashed pink;
+}
+
+.user-page form p {
+	margin: 15px 10px 5px 10px;
+	text-align: left;
+}
+
+.user-page form button {
+	display: inline-block;
+	background-color: #ff695f;
+	font-size: 15px;
+	font-weight: 800;
+	color: #fff;
+	text-transform: capitalize;
+	padding: 12px 25px;
+	border-radius: 23px;
+	letter-spacing: 0.25px;
+	border: none;
+	outline: none;
+	transition: all .3s;
+	width: 100%; /*추가로 넣음*/
+	background: #27CDF2;
+}
+
+.user-page form button:hover, .user-page form button:active, .user-page form button:focus
+	{
+	background: #03a4ed;
+}
+
+.user-page form .submit, .user-page form .cancel {
+	width: 40%;
+}
+
+.user-page form .cancel {
+	background-color: white;
+	color: #27CDF2;
+	border: 1px solid;
+}
+
+.user-page form .cancel:hover {
+	background-color: #D96941;
+	color: white;
+	border: 1px solid;
+}
+
+.user-page form .message {
+	text-align: center;
+	margin: 15px 0 0;
+	color: #b3b3b3;
+	font-size: 12px;
+	margin: 15px 0 0;
+}
+
+.user-page form .message a {
+	color: #4F4F4F;
+	text-decoration: none;
+}
+
+/* -----------폼 종료------------ */
+
+/* -----------테이블 시작 ------------ */
+.radius {
+	border-radius: 40px;
+	border: 2px dashed pink;
+	overflow: hidden;
+	padding: 50px;
+}
+
+.user-page table {
+	position: relative;
+	z-index: 1;
+	background: rgba(255, 255, 255, 0.4);
+	max-width: 360px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.user-page table td {
+	padding: 0;
+	border: none;
+}
+
+.user-page table tr:nth-of-type(2n) {
+	margin: 0;
+}
+
+.user-page table tr:nth-of-type(2n+1) {
+	color: #a6a6a6;
+	font-size: 14px;
+	line-height: 2;
+	font-weight: 400;
+	background-color: rgba(255, 255, 255, 0);
+	margin: 15px 10px 5px 10px;
+	text-align: left;
+}
+
+.user-page table button {
+	display: inline-block;
+	background-color: #ff695f;
+	font-size: 15px;
+	font-weight: 800;
+	color: #fff;
+	text-transform: capitalize;
+	padding: 12px 25px;
+	border-radius: 23px;
+	letter-spacing: 0.25px;
+	border: none;
+	outline: none;
+	transition: all .3s;
+	width: 100%; /*추가로 넣음*/
+	background: #27CDF2;
+}
+
+.user-page table button:hover, .table button:active, .table button:focus
+	{
+	background: #03a4ed;
+}
+
+.user-page table .submit, .user-page table .cancel {
+	width: 40%;
+}
+
+.user-page table .cancel {
+	background-color: white;
+	color: #27CDF2;
+	border: 1px solid;
+}
+
+.user-page table .cancel:hover {
+	background-color: #D96941;
+	color: white;
+	border: 1px solid #D96941;
+}
+
+/* .btn_area .submit {
+	display: inline-block;
+	background-color: #ff695f;
+	font-size: 15px;
+	font-weight: 800;
+	color: #fff;
+	text-transform: capitalize;
+	padding: 12px 25px;
+	border-radius: 23px;
+	letter-spacing: 0.25px;
+	border: none;
+	outline: none;
+	transition: all .3s;
+	background: #27CDF2;
+}
+
+.btn_area .submit:hover, .btn_area .submit:active, .btn_area .submit:focus
+	{
+	background: #03a4ed;
+} */
+.user-page table .message {
+	text-align: center;
+	margin: 15px 0 0;
+	color: #b3b3b3;
+	font-size: 12px;
+	margin: 15px 0 0;
+}
+
+.user-page table .message a {
+	color: #4F4F4F;
+	text-decoration: none;
+}
+
+/* -----------테이블 종료 ------------ */
+.user-page .container {
+	position: relative;
+	z-index: 1;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.user-page .container:before, .container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.user-page .container .info {
+	margin: 50px auto;
+	text-align: center;
+}
+
+.user-page .container .info h1 {
+	margin: 0 0 15px;
+	padding: 0;
+	font-size: 36px;
+	font-weight: 300;
+	color: #1a1a1a;
+}
+
+.user-page .container .info span {
+	color: #4d4d4d;
+	font-size: 12px;
+}
+
+.user-page .container .info span a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.user-page .container .info span .fa {
+	color: #EF3B3A;
+}

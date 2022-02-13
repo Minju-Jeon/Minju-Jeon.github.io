@@ -1,0 +1,122 @@
+.login-page {
+	height: 50rem;
+	width: 360px;
+	padding: 9rem 0 10%;
+	margin: auto;
+}
+
+.register-page {
+	height: 50rem;
+	width: 360px;
+	padding: 5% 0 0;
+	margin: auto;
+}
+.login-page .form, .register-page .form {
+	position: relative;
+	z-index: 1;
+	background: rgba(255, 255, 255, 0.4);
+	max-width: 360px;
+	margin: 0 auto;
+	padding: 50px;
+	text-align: center;
+	/*박스테두리
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0
+		rgba(0, 0, 0, 0.24);
+		*/
+	border-radius: 40px;
+	border: 2px dashed pink;
+}
+
+.login-page .form p, .register-page .form p {
+	margin: 15px 10px 5px 10px;
+	text-align: left;
+}
+
+.login-page .form input, .register-page .form input {
+	outline: 0;
+	width: 100%;
+	margin: 0 0 15px;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 14px;
+	border: 1px solid rgba(0, 0, 0, 0.07);
+	border-bottom: 3px solid pink;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.login-page .form input:focus, .register-page .form input:focus {
+	border: 1px solid pink !important;
+}
+
+.login-page .form button, .register-page .form button {
+	display: inline-block;
+	background-color: #ff695f;
+	font-size: 15px;
+	font-weight: 800;
+	color: #fff;
+	text-transform: capitalize;
+	padding: 12px 25px;
+	border-radius: 23px;
+	letter-spacing: 0.25px;
+	border: none;
+	outline: none;
+	transition: all .3s;
+	width: 100%; /*추가로 넣음*/
+	background: #27CDF2;
+}
+
+.login-page .form button:hover, .form button:active, .form button:focus
+	{
+	background: #03a4ed;
+}
+
+.login-page .form .message {
+	margin: 15px 0 0;
+	color: #b3b3b3;
+	font-size: 12px;
+}
+
+.login-page .form .message a {
+	color: #4F4F4F;
+	text-decoration: none;
+}
+
+.login-page .container {
+	position: relative;
+	z-index: 1;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.login-page .container:before, .container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.login-page .container .info {
+	margin: 50px auto;
+	text-align: center;
+}
+
+.login-page .container .info h1 {
+	margin: 0 0 15px;
+	padding: 0;
+	font-size: 36px;
+	font-weight: 300;
+	color: #1a1a1a;
+}
+
+.login-page .container .info span {
+	color: #4d4d4d;
+	font-size: 12px;
+}
+
+.login-page .container .info span a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.login-page .container .info span .fa {
+	color: #EF3B3A;
+}

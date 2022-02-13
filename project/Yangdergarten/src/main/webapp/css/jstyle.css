@@ -1,0 +1,157 @@
+/*  map css */
+.customoverlay {
+	position: relative;
+	bottom: 85px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	border-bottom: 2px solid #ddd;
+	float: left;
+}
+
+.customoverlay:nth-of-type(n) {
+	border: 0;
+	box-shadow: 0px 1px 2px #888;
+}
+
+.customoverlay a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	text-align: center;
+	border-radius: 6px;
+	font-size: 14px;
+	font-weight: bold;
+	overflow: hidden;
+	background: #ff695f;
+	background: #ff695f
+		url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png)
+		no-repeat right 14px center;
+}
+
+.customoverlay .title {
+	display: block;
+	text-align: center;
+	background: #fff;
+	margin-right: 35px;
+	padding: 10px 15px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.customoverlay:after {
+	content: '';
+	position: absolute;
+	margin-left: -12px;
+	left: 50%;
+	bottom: -12px;
+	width: 22px;
+	height: 12px;
+	background:
+		url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
+}
+
+/* body css */
+
+/* left list  오른쪽 메뉴바에 css 스타일*/
+#wrap {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#header {
+	width: 100%;
+	height: 200px;
+	background-color: aquamarine;
+}
+
+#nav {
+	width: 100%;
+	height: 80px;
+	background-color: black;
+}
+
+#left {
+	width: 20%;
+	height: 700px;
+	background-color: red;
+	float: left;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+ul#leftList {
+	width: 200px;
+	padding: 0 0 10px 20px;
+	list-style-type: none;
+	margin: 0 40px 40px 0;
+}
+
+ul#leftList li {
+	padding: 0 0 15px 20px;
+	list-style-type: none;
+}
+
+ul#leftList li a {
+	display: block;
+	width: 150px;
+	line-height: 18px;
+	padding: 11px 0 11px 26px;
+	background: #eee 15px 20px no-repeat;
+	border: 0;
+	border-radius: 30px;
+}
+
+.admin_con {
+	margin: 10rem 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+#contents {
+	width: 80%;
+	height: 700px;
+	float: left;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#contents2 {
+	width: 100%;
+	height: 700px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: baseline;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+#contents3 {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: baseline;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+@media ( max-width :1240px) {
+	#wrap {
+		width: 100%;
+	}
+}
+
+@media ( max-width : 860px) {
+	#wrap {
+		width: 100%
+	}
+	#left {
+		display: none;
+	}
+	#contents {
+		width: 100%;
+	}
+}

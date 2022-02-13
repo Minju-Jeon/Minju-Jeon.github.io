@@ -1,0 +1,96 @@
+#writetitle {
+	text-align: center;
+	margin-top:10px;
+	margin-left: 38%;
+	margin-right: 38%;
+	background-color: #07B0F2;
+	color : white;
+	align-items: center;
+
+
+	
+}
+
+#title {
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 0.25px;
+ 
+	width: 100%; /*추가로 넣음*/
+	margin-bottom: 10px;
+	
+	
+}
+
+input::placeholder {
+	color: black;
+	
+}
+
+
+
+#submitbtn {
+   
+    background-color: #07B0F2;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 12px 25px;
+    border-radius: 23px;
+    letter-spacing: 0.25px;
+    border: none;
+    outline: none;
+    transition: all .3s;
+	width: 15%; /*추가로 넣음*/
+	float : left;
+	position: relative;
+	left : 35%;
+	margin-top: 10px;
+
+  }
+
+#submitbtn:hover, #submitbtn:active, #submitbtn:focus {
+	background:   #ff695f;
+}
+
+
+#returnbtn {
+	
+    background-color: grey;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 12px 25px;
+    border-radius: 23px;
+    letter-spacing: 0.25px;
+    border: none;
+    outline: none;
+    transition: all .3s;
+	width: 15%; /*추가로 넣음*/
+
+    float : left;
+	position: relative;
+	left : 35%;
+		margin-top: 10px;
+	
+	
+
+  }
+
+#returnbtn:hover, #returnbtn:active, #returnbtn:focus {
+	background: #ff695f;
+}
+
+
+
+
+#big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

@@ -1,0 +1,38 @@
+package service.board;
+
+import action.Action;
+import action.ActionForward;
+import dao.BoardDao;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.sql.SQLException;
+
+/**
+ * Created by Leo.
+ * User: KBS
+ * Date: 9/26/2021
+ * Time: 오전 3:11
+ */
+public class EditBoard implements Action {
+    @Override
+    public ActionForward execute(HttpServletRequest request, HttpServletResponse response) throws SQLException {
+
+        BoardDao boardDao = new BoardDao();
+
+        String boardindex = request.getParameter("boardindex");
+        String boardid = request.getParameter("boardid");
+        String title = request.getParameter("title");
+        String content = request.getParameter("content");
+
+        boardDao.editBoard(boardindex,title,content);
+
+        ActionForward forward  = new ActionForward();
+
+        request.setAttribute("boardid",boardid);
+
+        forward.setPath("/BoardList.samb");
+        return forward;
+
+    }
+}

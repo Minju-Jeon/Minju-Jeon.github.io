@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.loadMap {
+	display: flex;
+	text-align: left;
+	flex-direction: column;
+	max-width: 11rem;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 0 2rem;
+	border-radius: 40px;
+	border: 2px dashed #07B0F2;
+}
+
+.loadMap h3{
+	font-family: "jua", sans-serif;
+	text-align: left;
+	color: #07B0F2;
+	line-height: 1.3;
+	font-size: 1rem;
+	margin: 0.3rem 0 0.1rem 0;
+}
+
+.loadMap h3 a{
+	color: #07B0F2 !important;
+}

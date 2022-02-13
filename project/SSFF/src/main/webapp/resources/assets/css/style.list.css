@@ -1,0 +1,152 @@
+/*----추천글 리스트 바----*/
+.recmdListBar{
+    top: 50%;
+    background-color: rgba(255, 255, 255,0.7);
+    box-sizing: border-box;
+    border: whitesmoke 1px solid;
+    border-radius: 3rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.recmdListBar ul,
+.recmdListBar li,
+.recmdListBar div {
+    list-style: none !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+.recmdListBar ul li{
+    padding-top: 0.1rem;
+}
+
+.recmdListBar .recommendPost_bar {
+    width: 0;
+    height: 3rem;
+    border: 2px solid #ceb9ff;
+    margin-right: 0.7rem;
+}
+
+.recmdListBar .recommendPost_title {
+    font-size: 0.8rem;
+}
+
+.recmdListBar .recommendPost_title a {
+    color: #8950FC !important;
+}
+
+/*----페이지네이션----*/
+.pagination .active,
+.pagination li:hover{
+    background-color: #6b984f !important;
+    color: #FFFFFF !important;
+}
+
+.pagination .active a,
+.pagination a:hover{
+    color: #FFFFFF !important;
+}
+
+/*----체크리스트 필터----*/
+.checklist li{
+    width: 8rem;
+}
+
+.checklist li:first-child{
+    width: 5rem !important;
+}
+
+/*----관리자 멤버 리스트----*/
+.mng_user_list{
+    vertical-align: middle !important;
+    word-break: break-word !important;
+}
+
+.mng_user_list td{
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+.user_pic_nick{
+    word-break: normal !important;
+}
+
+.user_pic_nick .symbol{
+    width: 100% !important;
+    max-width: 45px !important;
+    height: 45px !important;
+}
+
+/*----관리자 스터디 리스트----*/
+.mng_study_list .label{
+    word-break: keep-all !important;
+}
+
+.mng_study_list td{
+    vertical-align: middle !important;
+    word-break: break-word !important;
+}
+
+.study_num{
+    width: 5rem;
+}
+
+.study_nick{
+    width: 10rem;
+}
+
+.study_name{
+    width: 35%;
+}
+
+.study_date{
+    width: 7rem;
+}
+
+.mng_info {
+    margin: 0 auto;
+}
+
+.mng_info table {
+    border-collapse: separate;
+    text-align: center;
+}
+
+.mng_info table tr td:nth-child(odd){
+    width: 7rem;
+    color: #ebab31;
+    font-weight: 600;
+}
+
+.mng_info table tr td:nth-child(even){
+    font-weight: 300;
+}
+
+
+/*----스터디 게시판 게시글 리스트----*/
+
+.board_list .notice{
+    background-color: LemonChiffon;
+}
+
+.board_list .notice:hover{
+    background-color: palegoldenrod;
+}
+
+.board_list td{
+    text-align: center;
+}
+.board_list tbody td:first-child,
+.board_list tbody td:last-child{
+    font-size: 1rem;
+}
+
+/*----스터디 게시글----*/
+.study_board td{
+    text-align: center;
+    padding: 0.25rem;
+}

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+#weather{
+display: flex;
+}
+
+.weather_L{
+   width:50%; 
+   background-color:black;
+
+}
+.cur_w .wIcon{
+   background-color:blue;
+   width: 55%;
+   height: 100px;
+   display: inline-block;
+
+}
+.cur_w .cur_temp{
+    background-color:green;
+    width: 40%;
+   height: 100px;
+    display: inline-block;
+}
+
+.minmaxT{
+   background-color: yellow;
+}
+
+.minmaxT ul{
+ padding-left: 20px;
+
+}
+
+.minmaxT li{
+   background: white;
+   margin: 5px;
+   float: left;
+}
+
+.weather_R{
+   width:50%;
+   background-color:red;
+}
+.w_id {
+   text-align: left;
+}
+
+.temp {
+   float: left;
+   width: 33.3333%;
+   font-size: 4em;
+}

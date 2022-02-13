@@ -1,0 +1,184 @@
+/* 진수 */
+.allbtn {
+	background-color: #07B0F2;
+	border-radius: 30px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	color: white;
+	float: right;
+	margin-bottom: 10px;
+}
+
+#btn1 {
+	float: right;
+	margin-right: 7.5%;
+	margin-bottom: 10px;
+}
+
+#commentbtn:hover, #commentbtn:active, #commentbtn:focus {
+	background: #ff695f;
+}
+
+.allbtn:hover, .allbtn:active, .allbtn:focus {
+	background: #ff695f;
+}
+
+
+#commentbtn {
+	background-color: #07B0F2;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	color: white;
+	margin-left: 20%;
+}
+
+.top{
+	margin-top: 2.5%;
+}
+
+
+/* new */
+hr {
+	background-color: #07B0F2;
+	border: none;
+	height: 3px;
+}
+
+h1 {
+	margin-left: 50px;
+	text-align: left;
+	color: black;
+}
+
+h4 {
+	margin-left: 60px;
+	text-align: left;
+	color: black;
+}
+
+h4 strong { /*For the bars | within the header and footer*/
+	color: black;
+}
+
+body {
+	
+	background: white;
+}
+
+p {
+	line-height: 1.5;
+	font-size: 18px;
+	color: black;
+}
+
+div.container2 {
+	max-width: 85%;
+	border: 5px solid #07B0F2;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+/*
+header{
+	padding: 15px;
+	color: #666566;
+}
+*/
+div.main-content {
+	color: white;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+/* 댓글 */
+@import
+	url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
+
+.detailBox {
+	width: 90%;
+	border: 1px solid #07B0F2;
+	margin-left: 5%;
+}
+
+.titleBox {
+	background-color: #fdfdfd;
+	padding: 10px;
+}
+
+.titleBox label {
+	color: #07B0F2;
+	margin: 0;
+	display: inline-block;
+}
+
+
+
+.commentBox .form-group:first-child, .actionBox .form-group:first-child
+	{
+	width: 80%;
+}
+
+.commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2)
+	{
+	width: 18%;
+}
+
+.actionBox .form-group * {
+	width: 100%;
+	
+}
+
+.taskDescription {
+	margin-top: 10px 0;
+}
+
+.commentList {
+	padding: 0;
+	list-style: none;
+	max-height: 200px;
+	overflow: auto;
+}
+
+.commentList li {
+	margin: 0;
+	margin-top: 10px;
+}
+
+.commentList li>div {
+	display: table-cell;
+}
+
+.commenterImage {
+	width: 30px;
+	margin-right: 5px;
+	height: 100%;
+	float: left;
+}
+
+.commenterImage img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+.commentText p {
+	margin: 0;
+}
+
+.sub-text {
+	color: #aaa;
+	font-family: verdana;
+	font-size: 11px;
+}
+
+.actionBox {
+	border-top: 1px dotted  #07B0F2;
+	padding: 10px;
+}
+
+#comment {
+	background-color: white;
+	border: 1px solid  #07B0F2;
+}
