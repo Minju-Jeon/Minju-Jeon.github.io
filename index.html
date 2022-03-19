@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Minju's Github</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
 
-<body>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-    <h3>Projects</h3>
-    <a src="Minju-Jeon.github.io/project/Yangdergarten">Yangdergarten</a>
-
-    <a src="Minju-Jeon.github.io/project/SSFF/">SSFF</a>
-</body>
-
+  <body>
+    <div class="container">
+      <div id="wetherGeo">
+        <span>날씨/지역</span>
+      </div>
+      <div id="clock">
+        <div class="date"></div>
+        <div class="time">
+          <span class="dayOrNight"></span>
+          <span class="time"></span>
+          <button alt="24/12 표기법 변경" id="swith24hbtn">24h</button>
+        </div>
+      </div>
+      <div id="user">
+        <form id="login">
+          <h2>
+            <input required type="text" placeholder="이름을 적어주세여" />
+            <button value="submit">Enter</button>
+          </h2>
+        </form>
+        <div class="hidden" id="greeting">
+          <span></span>
+        </div>
+      </div>
+      <div id="todoList">
+        <input required type="text" placeholder="오늘 할 일을 기입해보자" />
+        <button>등록</button>
+        <ul></ul>
+      </div>
+    </div>
+    <script src="src/randomBackground.js"></script>
+    <script src="src/weatherNgeo.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/login.js"></script>
+    <script src="src/todo.js"></script>
+  </body>
 </html>
