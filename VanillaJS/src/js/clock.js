@@ -29,8 +29,8 @@ function getClock() {
   const month = now.getMonth();
   const day = now.getDay();
   const hour = now.getHours();
-  const min = now.getMinutes();
-  const sec = now.getSeconds();
+  const min = now.getMinutes().toString().padStart(2,"0");
+  const sec = now.getSeconds().toString().padStart(2,"0");
 
   date.innerHTML = `${year}/${month}/${day}`;
   //설정값에 따라 12~24시간 표기법으로 변경

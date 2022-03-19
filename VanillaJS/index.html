@@ -8,8 +8,9 @@
 
   <body>
     <div class="container">
-      <div id="wetherGeo">
-        <span>날씨/지역</span>
+      <div id="weatherGeo">
+        <div id="weather"><span>날씨</span></div>
+        <div id="city"><span>지역</span></div>
       </div>
       <div id="clock">
         <div class="date"></div>
@@ -30,13 +31,15 @@
           <span></span>
         </div>
       </div>
-      <div id="todoList">
-        <input required type="text" placeholder="오늘 할 일을 기입해보자" />
-        <button>등록</button>
-        <ul></ul>
+      <div id="todo">
+        <form>
+          <input required type="text" placeholder="오늘 할 일을 기입해보자" />
+          <button value="submit">등록</button>
+        </form>
+        <ul id="todo-list"></ul>
       </div>
     </div>
-    <script src="src/js/randomBackground.js"></script>
+    <!-- <script src="src/js/randomBackground.js"></script> -->
     <script src="src/js/weatherNgeo.js"></script>
     <script src="src/js/clock.js"></script>
     <script src="src/js/login.js"></script>
