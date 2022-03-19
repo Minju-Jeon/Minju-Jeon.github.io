@@ -26,13 +26,14 @@ function switch24() {
 function getClock() {
   const now = new Date();
   const year = now.getFullYear();
-  const month = now.getMonth();
-  const day = now.getDay();
-  const hour = now.getHours();
+  const month = now.getMonth() + 1;
+  const day = now.getDate();
+  const weekDay = now.toString().slice(0, 3);
+  const hour = now.getHours().toString().padStart(2,"0");
   const min = now.getMinutes().toString().padStart(2,"0");
   const sec = now.getSeconds().toString().padStart(2,"0");
 
-  date.innerHTML = `${year}/${month}/${day}`;
+  date.innerHTML = `${year}/${month}/${day} ${weekDay}`;
   //설정값에 따라 12~24시간 표기법으로 변경
   if (localStorage.getItem("24h") == T) {
     print24Clock(hour, min, sec);
@@ -48,13 +49,18 @@ function print24Clock(hour, min, sec) {
 
 //12시간표기
 function print12Clock(hour, min, sec) {
-  if (hour > 12) {
+  const hourFor12 = hour % 12;
+  if (hour > 11) {
+    if(hour == 12){
+      hourFor12 = 12;
+    }
     //오전오후 변경
     dayOrNight.innerHTML = "오후";
   } else {
     dayOrNight.innerHTML = "오전";
+    
   }
-  time.innerHTML = `${hour % 12}:${min}:${sec}`;
+  time.innerHTML = `${hourFor12.toString().padStart(2,"0")}:${min}:${sec}`;
 }
 
 getClock();

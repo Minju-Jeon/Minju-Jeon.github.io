@@ -1,27 +1,23 @@
-const loginForm = document.querySelector("#login");
+const loginForm = document.getElementById("loginForm");
 const nameInput = loginForm.querySelector("input");
-const greetingArea = document.querySelector("#greeting");
+const nameArea = document.getElementById("name");
 
 function getLogin(event) {
   event.preventDefault();
   localStorage.setItem("username", nameInput.value);
-  greeting();
+  printname();
 }
 
-
-function greeting() {
+function printname() {
   const name = localStorage.getItem("username");
-  const HELLO = `Hello, ${name}!`
-
-  document.querySelector("#greeting span").innerHTML= HELLO;
+  document.querySelector("#name span").innerHTML = `${name}의 TODO LIST`;
   loginForm.classList.toggle("hidden");
-  greetingArea.classList.toggle("hidden");
+  nameArea.classList.toggle("hidden");
   console.log(`${name} 로그인`);
 }
 
-
-if(localStorage.getItem("username")){
-    greeting();
+if (localStorage.getItem("username")) {
+  printname();
 }
 
 loginForm.addEventListener("submit", getLogin);
