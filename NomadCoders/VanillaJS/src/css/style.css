@@ -1,185 +1,201 @@
 @font-face {
-  font-family: "Cafe24SsurroundAir";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Cafe24SsurroundAir";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
-  font-family: "Cafe24SsurroundAir";
+    font-family: "Cafe24SsurroundAir";
 }
 
 body {
-  background-size: cover;
-  background-position: top;
-  display: inherit;
-  margin: 0;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    display: inherit;
+    margin: 0;
 }
 
 li {
-  list-style: none;
-  margin-bottom: 1em;
+    list-style: none;
+    margin-bottom: 1em;
 }
 
 input {
-  margin: 1em 0;
-  background-color: transparent;
-  outline: none;
-  border: none;
+    margin: 1em 0;
+    background-color: transparent;
+    outline: none;
+    border: none;
 }
 
 input[placeholder] {
-  font-size: 1rem;
-  text-align: center;
+    font-size: 1rem;
+    text-align: center;
 }
 
 button {
-  color: white;
-  background-color: transparent;
-  text-align: center;
-  font-size: 1rem;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 .header {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-  padding: 0.25rem 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 0.25rem 1rem;
 }
 
 .container * {
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
 }
+
 .content {
-  margin: 2em;
+    margin: 2em;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 #city {
-  font-size: small;
-  font-weight: 600;
+    font-size: small;
+    font-weight: 600;
 }
 
 #temp {
-  font-size: 1.5em;
-  font-weight: 600;
+    font-size: 1.5em;
+    font-weight: 600;
 }
 
 #weatherIcon i {
-  font-size: 3em;
+    font-size: 3em;
 }
 
 #weatherDesc span {
-  font-size: 0.75em;
-  align-items: center;
-  letter-spacing: 0.25em;
-  word-spacing: 1em;
-  margin-left: 0.25em;
-  margin-top: 0.25rem;
+    font-size: 0.75em;
+    align-items: center;
+    letter-spacing: 0.25em;
+    word-spacing: 1em;
+    margin-left: 0.25em;
+    margin-top: 0.25rem;
 }
 
 #clock {
-  margin-top: 1em;
+    margin-top: 1em;
 }
 
 #clock .date {
-  font-size: 1em;
-  font-weight: 600;
+    font-size: 1em;
+    font-weight: 600;
 }
 
 #clock .time {
-  font-size: 2.5em;
-  font-weight: 900;
+    font-size: 2.5em;
+    overflow: auto;
+    font-weight: 900;
+}
+
+@media ( max-width: 768px) {
+    #clock .time {
+        font-size: 2em;
+    }
+    #swith24hbtn {
+        font-size: 0.7em;
+        font-weight: 600;
+        margin-top: 2em;
+    }
 }
 
 #swith24hbtn {
-  background-color: gray;
-  color: aquamarine;
-  font-weight: 600;
-  width: 5em;
-  height: 3em;
-  margin-top: -1em;
-  border-radius: 30px;
+    background-color: gray;
+    color: aquamarine;
+    font-weight: 600;
+    width: 5em;
+    height: 3em;
+    margin-top: -1em;
+    border-radius: 30px;
 }
 
 #swith24hbtn:hover {
-  color: salmon;
+    color: salmon;
 }
 
 .backboard {
-  min-width: 40rem;
-  border: dashed 3px bisque;
-  border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.7);
-  justify-content: flex-end;
-  padding: 1em 2em;
-  margin: 2em 3em;
+    width: 60%;
+    min-width: 16em;
+    border: dashed 3px bisque;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    justify-content: flex-end;
+    padding: 1em 2em;
+    margin: 2em 3em;
 }
 
 #loginForm input {
-  width: 5rem;
-  height: 2em;
-  border-bottom: solid 2px aquamarine;
-  transition: 0.5s;
+    width: 5rem;
+    height: 2em;
+    border-bottom: solid 2px aquamarine;
+    transition: 0.5s;
 }
 
 #loginForm input:hover,
 #loginForm input:focus {
-  width: 7rem;
-  border-bottom: solid 2px salmon;
+    width: 7rem;
+    border-bottom: solid 2px salmon;
 }
 
-#todo{
-  max-width: 70%;
+#todo {
+    max-width: 70%;
 }
 
 #todoForm input {
-  width: 15em;
-  height: 2em;
-  border-bottom: solid 2px wheat;
-  transition: 0.5s;
+    width: 15em;
+    height: 2em;
+    border-bottom: solid 2px wheat;
+    transition: 0.5s;
 }
 
 #todoForm input:hover {
-  width: 20em;
-  border-bottom: solid 2px salmon;
+    width: 20em;
+    border-bottom: solid 2px salmon;
 }
+
 #todoForm input:focus {
-  width: 20em;
-  border-bottom: solid 2px aquamarine;
+    width: 20em;
+    border-bottom: solid 2px aquamarine;
 }
 
 #todoForm button {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 #todo-list {
-  padding: 0 1rem;
+    padding: 0 1rem;
 }
 
 #todo-list li {
-  font-weight: 600;
-  letter-spacing: 0.25em;
+    font-weight: 600;
+    letter-spacing: 0.25em;
 }
 
 #todo-list li button {
-  background-color: gray;
-  text-align: center;
-  border-radius: 30px;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 0.5rem;
+    background-color: gray;
+    text-align: center;
+    border-radius: 30px;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
 }
 
 #todo-list li button:hover {
-  background-color: aquamarine;
+    background-color: aquamarine;
 }
